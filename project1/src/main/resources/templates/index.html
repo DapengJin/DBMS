@@ -1,0 +1,89 @@
+<!--
+ * @Author: Jin X
+ * @Date: 2020-02-17 17:46:21
+ * @LastEditTime: 2020-02-19 14:02:48
+ -->
+
+ <html>
+<head>
+<link rel="stylesheet" type="text/css" href="/css/custom.css"/>
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="/css/bootstrap-table.min.css"/>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap-table.min.js"></script>
+
+<!-- <link rel="stylesheet" type="text/css" href="/static/css/custom.css"/>
+<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="/static/css/bootstrap-table.min.css"/>
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/static/js/bootstrap-table.min.js"></script>
+<script type="text/javascript" src="/static/js/table.js"></script> -->
+<script type="text/javascript" src="/test.json"></script>
+
+
+</head>
+    <body>
+
+        <div class="container">
+            <div class="page-header text-center">
+                <h1>Project 1</h1>
+            </div>
+            <form role="form" id="fm">
+                <div class="form-group">
+                    <label for="name">Type:</label>
+                    <label class="radio-inline">
+                    <input type="radio" name="type" value="mysql" checked>mysql
+                    </label>
+                    <label class="radio-inline">
+                    <input type="radio" name="type" value="redshift">redshift
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="name">SQL</label><br>
+                    <textarea id="send" name="sql" class="form-control" rows="7"></textarea>
+                </div>
+                <div class="form-group">
+                    <input class="btn btn-primary" id="submit" value="execute">
+                </div>
+            </form>
+            <table 
+                id="tb" 
+                data-toggle="table" 
+                data-height="700"
+                class="table table-striped">
+                <thead id="colh">
+                    <tr>
+                        <th>row1 c1</th>
+                        <th>row1 c2</th>
+                        <th>row1 c3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <!-- <script>
+                var $tb = $('#tb');
+                var $tr = $tb.find('tr');
+                $tr.children().remove()
+                var a=test[0]
+                Object.keys(a).forEach(function(e){
+                    $tr.append($('<th></th>').text(e).attr('data-field',e))
+                })
+                // $tb.bootstrapTable('load',test)
+                $(function(){
+                    $('#submi').click(function(){
+                        $tb.bootstrapTable('load',test);
+                        console.log('hh')
+                    })
+                })
+            </script> -->
+            
+
+
+
+        </div>
+        <script type="text/javascript" src="/js/table.js"></script>
+    </body>
+ </html>
