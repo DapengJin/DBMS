@@ -1,0 +1,13 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    font-size: large;
+    font-weight: 600;
+}
+#send{
+    background-color: Gainsboro;
+}
+footer{
+    background-color: Gainsboro;
+}

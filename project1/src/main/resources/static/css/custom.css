@@ -5,11 +5,9 @@
     font-size: large;
     font-weight: 600;
 }
-#title{
-    text-align: center;
-    background-color: orange;
-}
 #send{
-    background-color: rgb(243, 224, 224);
-    color: black;
+    background-color: Gainsboro;
+}
+footer{
+    background-color: Gainsboro;
 }

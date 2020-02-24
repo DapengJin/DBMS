@@ -1,12 +1,13 @@
 /*
  * @Author: Jin X
  * @Date: 2020-02-17 23:58:08
- * @LastEditTime: 2020-02-18 15:19:12
+ * @LastEditTime: 2020-02-23 10:20:14
  */
 $(function () {
     var $tb = $('#tb');
     $("#submit").click(function () {
         $tb.bootstrapTable('showLoading');
+        var timeBegin = new Date();
         $.ajax({
             type: "POST",
             dataType:"json",
@@ -24,6 +25,8 @@ $(function () {
                 $tb.bootstrapTable();
                 $tb.bootstrapTable('load', result);
                 $tb.bootstrapTable('hideLoading')
+                var timeEnd = new Date();
+                $('#time').text((timeEnd-timeBegin)+'ms')
                 console.log('load data')
             },
             error: function () {
